@@ -1,0 +1,8 @@
+# Build output
+main.out
+*.o
+
+# Runtime game data
+previous_game.bin
+users.bin
+users_info.txt
