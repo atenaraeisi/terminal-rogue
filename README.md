@@ -74,7 +74,7 @@ On Ubuntu/Debian:
 ```bash
 sudo apt install build-essential libncurses-dev
 ```
-#Build
+### Build
 
 Clone the repository and run:
 ```
@@ -82,13 +82,17 @@ make
 ```
 Then start the game with:
 
-```./terminal-rogue```
+```
+./terminal-rogue
+```
 
 To remove generated build files:
 
-```make clean```
+```
+make clean
+```
 
-#Controls
+### Controls
 
 The game is controlled entirely from the keyboard.
 Some important controls include:
@@ -98,7 +102,8 @@ Some important controls include:
 
 Additional controls and actions are shown through the in-game menus.
 
-#Project Structure
+## Project Structure
+```text
 .
 ├── auth.c / auth.h          # User authentication and profiles
 ├── create_map.c / .h       # Dungeon and room generation
@@ -109,12 +114,13 @@ Additional controls and actions are shown through the in-game menus.
 ├── startup.c / startup.h   # Game initialization
 ├── main.c                   # Program entry point
 └── Makefile                 # Build configuration
+```
 
-#Notes
+## Notes
 
 Runtime-generated user data and saved games are intentionally excluded from version control.
 The game is currently built and tested on Linux terminals with Unicode support.
 
-#License
+## License
 
 This project is available under the license included in the repository.
