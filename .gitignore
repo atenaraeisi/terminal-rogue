@@ -1,6 +1,7 @@
 # Build output
 main.out
 *.o
+terminal-rogue
 
 # Runtime game data
 previous_game.bin

@@ -304,7 +304,7 @@ char **create_map(int width, int height, int level_difficulty, Player* player, R
             for (int y = rooms[i].start_y; y < rooms[i].start_y + rooms[i].height; y++) {
                 for (int x = rooms[i].start_x; x < rooms[i].start_x + rooms[i].width; x++) {
                     if (map[y][x] == '+') {
-                        map[y][x] == 'v';
+                        map[y][x] = 'v';
                     }
                 }
             }

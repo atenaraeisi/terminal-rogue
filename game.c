@@ -459,7 +459,7 @@ int can_go(int y, int x, char **map, Player* player, int ***map_visited, int g_c
     int height, width;
     getmaxyx(stdscr, height, width);
     if(map[y][x] == '.' || map[y][x] == '#' || map[y][x] == '+' || map[y][x] == 'h'){
-        *map_visited[y][x] == 1;
+        (*map_visited)[y][x] = 1;
         return 1;
     } else if(map[y][x] == 'y'){
         player->health -= 10;
@@ -475,7 +475,7 @@ int can_go(int y, int x, char **map, Player* player, int ***map_visited, int g_c
     } else if(map[y][x] == 'f'){
         Food food;
         for(int i = 0; i < 7; i++){
-            if(foods[i].x = x && foods[i].y == y){
+            if(foods[i].x == x && foods[i].y == y){
                 food = foods[i];
             }
         }
